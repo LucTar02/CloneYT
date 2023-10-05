@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    font-family: 'Roboto', sans-serif;
+/* background-color: rgb(15,15,15); mörkt */
+    padding: 0;
+    margin: 0;
+
+}
+
+.cirkel1{
+    border-radius: 50%;
+}
+
+.image{
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+header{
+    height: 55px;
+    display: flex;
+    width: 98%;
+    position: fixed;
+    top:0;
+    left:0;
+    padding: 0 16px 0 5px;
+    justify-content: space-between;
+     /* border: 5px solid rgb(32, 138, 64); */
+    z-index: 9;
+    background-color: white;
+    overflow-y: scroll;
+    
+}
+
+/* .sidomeny-knapp{
+    height: 100%;
+    width: 100%;
+} */
+
+main{
+    display: flex;
+    margin-top: 35px;
+}  
+
+.section1{
+    display: flex;  
+    /* border: 3px solid rgb(80, 44, 44);  tillfälligt */
+    align-items: center;  
+}
+
+/*
+.header-left{    
+}
+.header-center{
+}
+ */
+.header-rhigt{
+    gap: 7px;
+}
+
+.yt-icon-start{
+    /* border: 3px solid rgb(44, 80, 78);  tillfälligt */
+    margin-left: 30px;
+}
+
+.språk{
+     /* border: 3px solid rgb(44, 80, 78);  tillfälligt */
+    font-size: 10px;
+    margin-top: -30px;
+    
+}
+
+
+.sökbaren{
+    padding-left: 5px;
+    border-radius: 18px 0 0 18px;
+    border-right: none;
+    width: 30vw;
+    height: 35px;
+}
+
+.header-sok{
+    height: 39px;
+    width: 65px;
+    border-radius: 0 18px 18px 0;
+    background-color: #ffffff;
+}
+
+.Sok-med-rosten{
+    display: flex;
+    margin-left: 15px;
+    height: 37px;
+    width: 37px;
+    align-items: center;
+    justify-content:center;
+    border: none;
+    cursor:pointer;
+}
+
+.Sok-med-rosten:hover{
+    background-color: rgb(173, 173, 173);
+}
+
+.hovercirkel{
+   /* border: 2px solid rgb(81, 29, 141);  tillfälligt */
+    height:32px;
+    width:32px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hovercirkel:hover{
+    background-color: rgb(173, 173, 173);
+    border-radius: 50%;
+}
+
+/* .header1{
+    border: 5px solid rgb(129, 26, 26);  tillfälligt 
+} */ 
+
+
+
+nav{
+    /* border: 5px solid rgb(129, 26, 26); /* tillfälligt */
+    width: 210px;
+    height: 95vh;
+    overflow: auto;
+    position: fixed;
+
+}
+
+.leftside-nav{
+    /* border: 5px solid rgb(21, 55, 105); /* tillfälligt */
+    border-bottom: 2px solid rgb(77, 77, 77);
+    padding: 5px 10px 30px 10px;
+    margin-top: 30px;
+}
+
+.menyerna{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center; 
+    /*border: 2px solid rgb(81, 29, 141); /* tillfälligt */
+    padding: 4px;
+    border-radius: 11px;
+    font-size: 14px;
+    color: black;
+    text-decoration: none;
+}
+.menyerna:hover{
+    background-color: rgb(173, 173, 173)  /*#f2f2f2; rätt färg*/
+}
+
+.box{
+    padding-right: 15px;
+    /*border: 2px solid rgb(29, 141, 44); /* tillfälligt */
+}
+
+.sjätte{
+    font-size: 12px ;
+    text-decoration: none;
+}
+
+.video-sidan{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(auto-fill, (315px, 1fr)); 
+   /* grid-template-columns: repeat(5, 1fr); */
+    gap: 3rem 1rem;
+    padding: 2rem;
+    margin: 0 1.5rem;
+    height: 360px;
+    margin-left: 190px;
+}
+
+.video-container{
+   /* border: 5px solid rgb(21, 55, 105); tillfälligt */
+    display: flex;
+    flex-direction: column;
+}
+
+.thumbnail{
+    display: flex;
+    position: relative;
+}
+
+.thumbnail::before{
+    content: attr(thum-tid);
+    position: absolute;
+    background-color: rgba(0,0,0,85);
+    color: white;
+    right: 5px;
+    bottom: 5px;
+    padding: .1em .3em;
+    border-radius: .3em;
+}
+
+.thumbnail-bild{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.thumbnail-bild:hover{
+    border-radius: 0px;
+}
+
+
+.video-textbild{
+    display: flex;
+    margin-top: 8px;
+   /* border: 5px solid rgb(139, 18, 119); /* tillfälligt */
+    
+}
+
+.video-title{
+    text-decoration: none;
+}
+
+.video-text{
+    font-size:14px;
+    text-decoration: none;    /* funkar ej */
+}
+
+/* scroll */
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #ffffff;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #555;
+    border-radius: 50vh;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+/*scroll end*/
+
+
+/* mobile*/
+
+@media (max-with: 800px){
+    nav{
+        display: none;
+    }
+}
+
+
+
+/* 
+border-radius: 50%; för bilder runda
+padding: 0 12px;
+align-items: center; 
+font-size: 16px;
+line-height: 24px;
+display: flex;
+    flex-direction: row;
+    
+        width: 100%;*/
+
+
+        /* .di{
+            display: none;
+        }
+
+        @media (max-with: 500px){
+
+            .di{display:block;}
+
+        }
+
+        */
